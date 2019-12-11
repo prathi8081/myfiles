@@ -34,7 +34,7 @@ main()
         } 
   
        
-        if (l < n) 
+        if (l < n)   
         { 
             for (i = m - 1; i >= k; --i) { 
                 a[i][l]=count--; 
