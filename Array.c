@@ -26,3 +26,4 @@ int main()
     printf("Left-out Element : %d\n",repeat+((n*(n+1))/2)-sum);
     return 0;
 }
+ 
