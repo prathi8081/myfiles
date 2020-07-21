@@ -1,0 +1,37 @@
+/*
+1
+3*2
+4*5*6
+10*9*8*7
+*/
+#include<stdio.h>
+int main()
+{
+    int row,col,n,start;
+    scanf("%d",&n);
+    for(row=1;row<=n;row++,printf("\n"))
+    {
+        if(row%2)
+        {
+            start=((row*(row-1))/2)+1;
+            for(col=1;col<=row;col++)
+            {
+                if(col==row)
+                    printf("%d",start++);
+                else
+                    printf("%d*",start++);   
+            }
+        }
+        else
+        {
+            start=((row*(row+1))/2);
+            for(col=1;col<=row;col++)
+            {
+                if(col==row)
+                    printf("%d",start--);
+                else
+                    printf("%d*",start--);  
+            }
+        }   
+    }
+}
